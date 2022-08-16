@@ -1,0 +1,18 @@
+use solana_program::{
+    accout_info::AccountInfo,
+    entrypoint,
+    entrypoint::ProgramResult,
+    pubkey::Pubkey,
+    msg,
+};
+
+entrypoint!(process_instruction);
+
+fn process_instruction(
+    _program_id: &PubKey,
+    _accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    msg!("プログラム実行");
+    Ok(())
+}

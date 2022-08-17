@@ -32,6 +32,11 @@ impl Guess {
 mod tests {
     use super::*;
     #[test]
+    fn it_works() {
+        assert_eq!(2 + 2, 4);
+    }
+
+    #[test]
     fn larger_can_hold_smaller() {
         let larger = Rectangle {
             width: 8,

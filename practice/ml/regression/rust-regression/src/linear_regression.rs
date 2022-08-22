@@ -19,7 +19,7 @@ use read_csv::read_housing_csv;
 
 
 pub fn run() -> f64 {
-    let ifile = "/Users/kento/rust_collections/practice/ml/regression/datasets/boston_house.csv";
+    let ifile = "../datasets/boston_house.csv";
     let mut input_data = read_housing_csv(&ifile);
 
     let test_chunk_size: f64 = input_data.len() as f64 * 0.3;
